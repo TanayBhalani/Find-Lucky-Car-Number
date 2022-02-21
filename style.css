@@ -1,0 +1,45 @@
+h1,
+h2 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: aliceblue;
+}
+
+header {
+  margin: 0;
+  padding: 10px 15px;
+  animation: gradient-rotate 3s cubic-bezier(0.645, 0.045, 0.355, 1)
+    alternate-reverse infinite;
+  background-image: linear-gradient(rgb(54, 56, 224), rgb(11, 145, 145));
+  background-size: 100% 1100%;
+  color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+section {
+  margin: 15px 10vw;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.inputs > input {
+  height: 20px;
+}
